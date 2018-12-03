@@ -29,8 +29,6 @@ map <leader>* :Ggrep --untracked <cword><CR><CR>
 map <leader>8 :Ggrep --untracked <cword><CR><CR>
 map <leader>B :Gbrowse<CR>
 map <leader>D :r! date +'\%Y-\%m-\%d \%H:\%M:\%S\%z'<CR>
-" map <leader>c :copen<CR>
-" map <leader>C :cclose<CR>
 nmap <leader>c <Plug>window:quickfix:toggle
 map <leader>f :setlocal foldmethod=syntax<CR>
 map <leader>F :setlocal foldmethod=manual<CR>
