@@ -89,6 +89,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_html_checkers = []
 let g:syntastic_scss_checkers = []
+let g:syntastic_rust_checkers = []
 " let g:syntastic_clojure_checkers = ['eastwood']
 let g:typescript_indent_disable = 1
 
