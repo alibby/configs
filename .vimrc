@@ -67,7 +67,7 @@ map <leader>x v$:w !pbcopy<CR><CR>
 set foldlevel=1
 command Pw :r! pwgen -nyc -1 24
 command -nargs=* Gbranch :Git branch <args>
-command -nargs=1 Gnb :Git checkout -b <args> master
+command -nargs=1 Gnb :Git checkout -b `basename <args>` master
 command -nargs=1 Gfb :Git fetch origin <args>:<args>
 command -nargs=+ Gco :Git checkout <args>
 command -nargs=+ Gstash :Git stash <args>
