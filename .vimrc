@@ -40,7 +40,7 @@ map <leader>gcb :Git checkout -b
 map <leader>gd :Gdiff<CR>
 map <leader>gf :Gfetch origin master:master
 map <leader>gl :Glog master..head<CR><CR>
-map <leader>gp :Git pull-request -a alibby -r cbartlett -o
+map <leader>gp :Git pull-request -o -p -a alibby -r cbartlett
 map <leader>gr :Git rebase --interactive master
 map <leader>gR :Gread<CR>
 map <leader>gs :Gstatus<CR>
