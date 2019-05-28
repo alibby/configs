@@ -1,7 +1,8 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
-colorscheme railscasts
+" colorscheme railscasts
+colorscheme vividchalk
 set textwidth=80
 set list
 set listchars=tab:>-
