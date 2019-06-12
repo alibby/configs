@@ -101,3 +101,6 @@ set secure
 
 :runtime! ftplugin/man.vim
 
+let vim_markdown_preview_hotkey='<C-m>'
+let vim_markdown_preview_github=1
+
