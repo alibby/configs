@@ -43,7 +43,7 @@ map <leader>gl :Glog master..head<CR><CR>
 map <leader>gp :Git pull-request -o -p -a alibby -r cbartlett
 map <leader>gr :Git rebase --interactive master
 map <leader>gR :Gread<CR>
-map <leader>gs :Gstatus<CR>
+map <leader>gs :Gstatus<CR>:res 15<CR>
 map <leader>gS :Gstatus<CR><C-w><C-o>
 map <leader>gw :Git add .<CR><CR>:Gcommit -m WIP<CR><CR>
 map <leader>gW :Git reset @~1<CR><CR>
