@@ -3,7 +3,7 @@ syntax on
 filetype plugin indent on
 " colorscheme railscasts
 colorscheme vividchalk
-set textwidth=80
+set textwidth=70
 set list
 set listchars=tab:>-
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
@@ -22,18 +22,13 @@ map ]gc :call search('^\s*'.substitute(escape(&cms, '\.*[]^$'), '%s', '.*', '').
 map [gc :call search('^\s*'.substitute(escape(&cms, '\.*[]^$'), '%s', '.*', '').'\s*$', 'bs')<CR>
 
 let mapleader = ' '
-map <leader><leader> :vs<CR><c-]>
-map <leader>% :let @*=expand("%")<CR>
-map <leader>l :let @*=expand("%") . ":" . line(".")<CR>
+map <leader>l :let @*=fnamemodify(expand("%"), ":~:.") . ":" . line(".")<CR>
 map <leader>.v :vsplit ~/.vimrc<CR>
 map <leader>.l :vsplit .vimrc<CR>
 map <leader>.* :let @/ = expand("<cword>")<CR>
 map <leader>* :Ggrep --untracked <cword><CR><CR>
-map <leader>8 :Ggrep --untracked <cword><CR><CR>
 map <leader>B :Gbrowse<CR>
-map <leader>D :r! date +'\%Y-\%m-\%d \%H:\%M:\%S\%z'<CR>
-map <leader>G :e Gemfile
-map <leader>R :e config/routes.rb<CR>
+map <leader>D :r! date +'\# \%Y-\%m-\%d \%H:\%M:\%S\%z'<CR>
 nmap <leader>c <Plug>window:quickfix:toggle
 map <leader>f :setlocal foldmethod=syntax<CR>
 map <leader>F :setlocal foldmethod=manual<CR>
@@ -46,37 +41,26 @@ map <leader>gf :Gfetch origin master:master
 map <leader>gg yaw<C-w>j:Ggrep <C-r>"
 map <leader>gl :Glog master..head<CR><CR>
 map <leader>gp :Git pull-request -o -p -a alibby -r cbartlett
-map <leader>gr :Git rebase --interactive master
+map <leader>gr :Grebase --interactive master
 map <leader>gR :Gread<CR>
 map <leader>gs :Gstatus<CR>:res 15<CR>
 map <leader>gS :Gstatus<CR><C-w><C-o>
 map <leader>gw :Git add .<CR><CR>:Gcommit -m WIP<CR><CR>
 map <leader>gW :Git reset @~1<CR><CR>
-map <leader>h :view /etc/hosts<cr>
-map <leader>n :bn<cr>
 map <leader>rm :Rails db:migrate<CR>
 map <leader>rr :Rails db:rollback<CR>
-map <leader>o :! open %<CR><CR>
 map <leader>p :CtrlP<CR>
+map <leader>P /=\n.*
 map <leader>S :SyntasticCheck<CR>
 map <leader>s :Switch<CR>
-map <leader>u :call echo "!open '".
 map <leader>t :AV<CR>
-map <leader>T :Trim<CR>
-map <leader>w :set scrollbind<CR>:set cursorbind<CR>
-map <leader>W :set noscrollbind<CR>:set nocursorbind<CR>
 map <leader>q <c-w>c
-map <leader>yf :let @* = expand("%")<CR>
-map <C-w>J <C-w>j<C-w>o
-map <C-w>K <C-w>k<C-w>o
+map <leader>x v$h"*y
 
-map <leader>x v$:w !pbcopy<CR><CR>
 set foldlevel=1
 command Pw :r! pwgen -nyc -1 24
 command -nargs=* Gbranch :Git branch <args>
-command          Gemfile :e Gemfile<args>
-command -nargs=1 Gnb :Git checkout -b `basename <args>` master
-command -nargs=1 Gfb :Git fetch origin <args>:<args>
+command -nargs=1 Gnb :Git checkout -b <args> master
 command -nargs=+ Gco :Git checkout <args>
 command -nargs=+ Gstash :Git stash <args>
 command          Gsp :Git stash push -u -k
