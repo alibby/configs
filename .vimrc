@@ -52,6 +52,7 @@ map <leader>gw :Git add .<CR><CR>:Gcommit -m WIP<CR><CR>
 map <leader>gW :Git reset @~1<CR><CR>
 map <leader>rm :Rails db:migrate<CR>
 map <leader>rr :Rails db:rollback<CR>
+map <leader>rn :set rnu!<CR>
 map <leader>P /=\n.*
 map <leader>S :SyntasticCheck<CR>
 map <leader>s :Switch<CR>
