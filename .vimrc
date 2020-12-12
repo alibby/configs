@@ -114,7 +114,7 @@ xmap <buffer> <F4> <Plug>(xmpfilter-run)
 imap <buffer> <F4> <Plug>(xmpfilter-run)
 
 let g:slime_target = "tmux"
-let g:netrw_localrmdir='rm -r'
+let g:netrw_localrmdiropt = "rf"
 
 autocmd FileType js let b:switch_custom_definitions =
     \ [
