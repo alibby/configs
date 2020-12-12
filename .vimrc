@@ -61,6 +61,8 @@ map <leader>q <c-w>c
 map <leader>x v$h"*y
 
 set foldlevel=1
+
+command! -nargs=+ Gca :r!git log -n100 --pretty=format:"\%an <\%ae>" | grep -i '<args>' | head -1 | xargs echo "Co-authored-by:"
 command Pw :r! pwgen -nyc -1 24
 command -nargs=* Gbranch :Git branch <args>
 command -nargs=1 Gnb :Git checkout -b <args> master
@@ -79,6 +81,12 @@ set statusline=%q%{fugitive#statusline()}\ %f\ %m\ %Y\ %c\ %l/%L\ %r
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
+set statusline+=%{GitStatus()}
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
