@@ -99,6 +99,7 @@ let g:syntastic_sql_checkers = []
 " let g:syntastic_clojure_checkers = ['eastwood']
 let g:typescript_indent_disable = 1
 
+let g:merginal_remoteVisible = 0
 set exrc
 set secure
 
