@@ -35,6 +35,7 @@ map <leader>f :setlocal foldmethod=syntax<CR>
 map <leader>F :setlocal foldmethod=manual<CR>
 map <leader>/ :Ggrep <C-r>"<CR>
 map <leader>gb :Gblame<CR>
+map <leader>gC oCo-authored-by: Bruce Wayne <wayne@example.com><CR><ESC>kfB
 map <leader>gcm :Git checkout master<CR><CR>
 map <leader>gcb :Git checkout -b
 map <leader>gd :Gdiff<CR>
