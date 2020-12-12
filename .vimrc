@@ -38,7 +38,7 @@ map <leader>gb :Gblame<CR>
 map <leader>gC oCo-authored-by: Bruce Wayne <wayne@example.com><CR><ESC>kfB
 map <leader>gcm :Git checkout master<CR><CR>
 map <leader>gcb :Git checkout -b
-map <leader>gd :Gdiff<CR>
+map <leader>gd :Gvdiff<CR>
 map <leader>gf :Gfetch origin master:master
 map <leader>gg yaw<C-w>j:Ggrep <C-r>"
 map <leader>gl :Glog master..head<CR><CR>
