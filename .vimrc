@@ -21,6 +21,7 @@ map ]gc :call search('^\s*'.substitute(escape(&cms, '\.*[]^$'), '%s', '.*', '').
 map [gc :call search('^\s*'.substitute(escape(&cms, '\.*[]^$'), '%s', '.*', '').'\s*$', 'bs')<CR>
 
 let mapleader = ' '
+map <leader>d :DBUIToggle<CR>
 map <leader>l :let @*=fnamemodify(expand("%"), ":~:.") . ":" . line(".")<CR>
 map <leader>.v :vsplit ~/.vimrc<CR>
 map <leader>.l :vsplit .vimrc<CR>
