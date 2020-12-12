@@ -43,6 +43,7 @@ map <leader>ge :e <cword><CR>
 map <leader>gf :Gfetch origin master:master
 map <leader>gg yaw<C-w>j:Ggrep <C-r>"
 map <leader>gl :Gclog master..head<CR><CR>
+map <leader>gm :MerginalToggle<CR>
 map <leader>gp :Git pull-request -o -p -a alibby
 map <leader>gr :Grebase --interactive master
 map <leader>gR :Gread<CR>
