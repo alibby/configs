@@ -12,7 +12,7 @@ set eol
 set splitright
 set spelllang=en
 set spellfile=/Users/alibby/.vim/spell/en.utf-8.add
-set diffopt+=vertical
+" set diffopt+=vertical
 
 autocmd QuickFixCmdPost *grep* cwindow
 
