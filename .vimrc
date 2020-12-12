@@ -47,8 +47,7 @@ map <leader>gm :MerginalToggle<CR>
 map <leader>gp :Git pull-request -o -p -a alibby
 map <leader>gr :Grebase --interactive master
 map <leader>gR :Gread<CR>
-map <leader>gs :Gstatus<CR>:res 15<CR>
-map <leader>gS :Gstatus<CR><C-w><C-o>
+map <leader>gs :G<CR>:res 15<CR>
 map <leader>gw :Git add .<CR><CR>:Gcommit -m WIP<CR><CR>
 map <leader>gW :Git reset @~1<CR><CR>
 map <leader>rm :Rails db:migrate<CR>
