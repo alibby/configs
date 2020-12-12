@@ -42,8 +42,8 @@ map <leader>gd :Gvdiff<CR>
 map <leader>ge :e <cword><CR>
 map <leader>gf :Gfetch origin master:master
 map <leader>gg yaw<C-w>j:Ggrep <C-r>"
-map <leader>gp :Git pull-request -o -p -a alibby -r cbartlett
 map <leader>gl :Gclog master..head<CR><CR>
+map <leader>gp :Git pull-request -o -p -a alibby
 map <leader>gr :Grebase --interactive master
 map <leader>gR :Gread<CR>
 map <leader>gs :Gstatus<CR>:res 15<CR>
