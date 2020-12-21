@@ -20,6 +20,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 map <F12> :Explore<CR>
 map ]gc :call search('^\s*'.substitute(escape(&cms, '\.*[]^$'), '%s', '.*', '').'\s*$', 's')<CR>
 map [gc :call search('^\s*'.substitute(escape(&cms, '\.*[]^$'), '%s', '.*', '').'\s*$', 'bs')<CR>
+map <C-w>f <C-w>vgf
 
 let mapleader = ' '
 map <leader>d :DBUIToggle<CR>
