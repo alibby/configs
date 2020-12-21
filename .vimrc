@@ -10,6 +10,7 @@ set nohidden
 set number
 set eol
 set splitright
+set diffopt+=vertical
 set spelllang=en
 set spellfile=/Users/alibby/.vim/spell/en.utf-8.add
 " set diffopt+=vertical
