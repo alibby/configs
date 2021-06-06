@@ -101,6 +101,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_html_checkers = []
 let g:syntastic_scss_checkers = []
+let g:syntastic_sass_checkers = []
 let g:syntastic_rust_checkers = []
 let g:syntastic_python_checkers = []
 let g:syntastic_sql_checkers = []
