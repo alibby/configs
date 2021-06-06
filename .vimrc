@@ -32,6 +32,8 @@ map <leader>.l :vsplit .vimrc<CR>
 map <leader>.* :let @/ = expand("<cword>")<CR>
 map <leader>* :Ggrep --untracked <cword><CR><CR>
 map <leader>B :Gbrowse<CR>
+nmap <leader>\| :set cuc!<CR>
+nmap <leader>_ :set cul!<CR>
 map <leader>D O<ESC>:put =strftime('# %a %Y-%m-%d %H:%M:%S%z')<CR>o
 nmap <leader>c <Plug>window:quickfix:toggle
 map <leader>e :e <cfile><CR>
