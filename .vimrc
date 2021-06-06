@@ -64,7 +64,9 @@ map <leader>S :SyntasticCheck<CR>
 map <leader>s :Switch<CR>
 map <leader>t :AV<CR>
 map <leader>q <c-w>c
-map <leader>x v$h"*y
+" nmap <leader>X v$h"*y
+nmap <leader>X "*yy
+
 
 set foldlevel=1
 
