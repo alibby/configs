@@ -1,7 +1,6 @@
 syntax on
 filetype plugin indent on
-" colorscheme railscasts
-colorscheme vividchalk
+colorscheme dichromatic
 set textwidth=70
 set list
 set listchars=tab:>-
