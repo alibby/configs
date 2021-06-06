@@ -139,3 +139,20 @@ autocmd FileType eruby let b:switch_custom_definitions =
     \     '\<\(\k\+\):':     ':\1 =>',
     \   },
     \ ]
+
+
+let g:git_messenger_include_diff = "current"
+let g:git_messenger_always_into_popup = v:true
+let g:git_messenger_max_popup_height = 35
+
+function! OpenURLUnderCursor()
+  let s:uri = expand('<cWORD>')
+  let s:uri = substitute(s:uri, '?', '\\?', '')
+  let s:uri = shellescape(s:uri, 1)
+  if s:uri != ''
+    silent exec "!open '".s:uri."'"
+    :redraw!
+  endif
+endfunction
+nnoremap gx :call OpenURLUnderCursor()<CR>
+
