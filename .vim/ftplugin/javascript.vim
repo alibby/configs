@@ -6,5 +6,6 @@ map <leader>R :RuboCop<CR>
 
 autocmd BufNewFile,BufRead Gemfile setlocal keywordprg=:Bopen
 set suffixesadd=.js
+set nospell
 
 
