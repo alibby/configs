@@ -1,0 +1,22 @@
+
+alias 6=vim
+alias be='bundle exec'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dc=docker-compose
+alias dm=docker-machine
+alias docker-ubuntu='docker run --rm -i -t --name ubuntu --hostname docker-ubuntu myubuntu bash -l'
+alias gc='git commit'
+alias gf='git fetch'
+alias gfm='git fetch origin master:master'
+alias gp='git push'
+alias gs='git status'
+alias gss='git status -s'
+alias six=vim
+alias tmuxinator='RBENV_VERSION=2.5.7 tmuxinator'
+alias tm="tmux new-session -t \$(basename \$(pwd)) \; new-window -n vim \; new-window -n server \; new-window -n sidekiq"
+alias tm0="tmux new-session -t \$(basename \$(pwd))"
+alias tm1="tmux new-session -t \$(basename \$(pwd)) \; new-window -n vim"
+alias tmat='tmux at'
+alias tmk='tmux kill-session -t'
+alias tmls='tmux ls'
+alias weather="clear; curl wttr.in"
