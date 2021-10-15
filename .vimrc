@@ -55,6 +55,7 @@ map <leader>gP :Git pull<CR>
 map <leader>gr :Grebase --interactive master
 map <leader>gR :Gread<CR>
 map <leader>gs :G<CR>:res 15<CR>
+map <leader>gt :tabnew<CR>
 map <leader>gw :Git add .<CR><CR>:Gcommit -m WIP<CR><CR>
 map <leader>gW :Git reset @~1<CR><CR>
 map <leader>rm :Rails db:migrate<CR>
