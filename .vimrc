@@ -27,7 +27,7 @@ map <C-w>f <C-w>vgf
 let mapleader = ' '
 map <leader>d :DBUIToggle<CR>
 map <leader>l :let @*=fnamemodify(expand("%"), ":~:.") . ":" . line(".")<CR>
-map <leader>.v :vsplit ~/.vimrc<CR>
+map <leader>.v :tabe ~/.vimrc<CR>
 map <leader>.l :vsplit .vimrc<CR>
 map <leader>.* :let @/ = expand("<cword>")<CR>
 map <leader>* :Ggrep --untracked <cword><CR><CR>
