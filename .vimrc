@@ -69,6 +69,8 @@ map <leader>q <c-w>c
 " nmap <leader>X v$h"*y
 nmap <leader>X "*yy
 
+" reselect pasted text
+nnoremap gp `[v`]
 
 set foldlevel=1
 
