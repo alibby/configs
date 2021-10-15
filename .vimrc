@@ -82,7 +82,6 @@ command -nargs=+ Gco :Git checkout <args>
 command -nargs=+ Gstash :Git stash <args>
 command          Gsp :Git stash push -u -k
 command          Gso :Git stash pop
-command! -complete=shellcmd Routes new | setlocal buftype=nofile bufhidden=hide noswapfile | r !Bundle exec rake routes
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:ctrlp_working_path_mode = 'ra'
