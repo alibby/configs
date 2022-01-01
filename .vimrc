@@ -108,6 +108,7 @@ let g:syntastic_sass_checkers = []
 let g:syntastic_rust_checkers = []
 let g:syntastic_python_checkers = []
 let g:syntastic_sql_checkers = []
+let g:syntastic_ruby_checkers = []
 " let g:syntastic_clojure_checkers = ['eastwood']
 let g:typescript_indent_disable = 1
 
