@@ -12,6 +12,7 @@ alias gp='git push'
 alias gs='git status'
 alias gss='git status -s'
 alias six=vim
+alias rs="bundle exec rails s -b 'ssl://0.0.0.0:3000?key=/Users/alibby/.ssl/privkey.pem&cert=/Users/alibby/.ssl/fullchain.pem'"
 alias tmuxinator='RBENV_VERSION=2.5.7 tmuxinator'
 alias tm="tmux new-session -t \$(basename \$(pwd)) \; new-window -n vim \; new-window -n server \; new-window -n sidekiq"
 alias tm0="tmux new-session -t \$(basename \$(pwd))"
