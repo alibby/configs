@@ -171,3 +171,5 @@ nnoremap gx :call OpenURLUnderCursor()<CR>
 
 let g:twiggy_group_locals_by_slash = 0
 let g:twiggy_local_branch_sort = 'mru'
+let g:twiggy_split_position = 'topleft'
+let g:twiggy_num_columns = 35
