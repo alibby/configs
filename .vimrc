@@ -65,6 +65,7 @@ map <leader>gs :G<CR>:res 15<CR>
 map <leader>gt :tabnew<CR>
 map <leader>gw :Git add .<CR><CR>:Gcommit -m WIP<CR><CR>
 map <leader>gW :Git reset @^<CR><CR>
+map <leader>m :let @" = split(expand("%:t"), "_")[0]<CR>
 map <leader>rm :Rails db:migrate<CR>
 map <leader>rr :Rails db:rollback<CR>
 map <leader>rn :set rnu!<CR>
