@@ -1,6 +1,12 @@
 syntax on
 filetype plugin indent on
-colorscheme dichromatic
+
+if &diff
+  colorscheme dichromatic
+else
+  colorscheme vividchalk
+endif
+
 set textwidth=70
 set list
 set listchars=tab:>-
