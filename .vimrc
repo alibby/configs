@@ -56,6 +56,7 @@ map <leader>ge :e <cword><CR>
 map <leader>gf :Git fetch origin master:master
 map <leader>gg yaw<C-w>j:Ggrep <C-r>"
 map <leader>gl :Git log master..<CR><C-w>L
+map <leader>gL :Git log<CR><C-w>L
 map <leader>gp :Git pull-request -o -p -a alibby
 map <leader>gP :Git pull<CR>
 map <leader>gr :Grebase --interactive master
