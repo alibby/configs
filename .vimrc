@@ -31,7 +31,7 @@ map [gc :call search('^\s*'.substitute(escape(&cms, '\.*[]^$'), '%s', '.*', '').
 map <C-w>f <C-w>vgf
 
 let mapleader = ' '
-map <leader>d :DBUIToggle<CR>
+map <leader>d :tabnew<CR>:DBUIToggle<CR>
 map <leader>l :let @*=fnamemodify(expand("%"), ":~:.") . ":" . line(".")<CR>
 map <leader>.v :tabe $MYVIMRC<CR>
 map <leader>.l :vsplit .vimrc<CR>
