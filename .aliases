@@ -1,5 +1,5 @@
 
-alias 6=vim
+alias 6=nvim
 alias be='bundle exec'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias dc=docker-compose
