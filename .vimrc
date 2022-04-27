@@ -46,7 +46,7 @@ map <leader>e :e <cfile><CR>
 map <leader>f :setlocal foldmethod=syntax<CR>
 map <leader>F :setlocal foldmethod=manual<CR>
 map <leader>/ :Ggrep <C-r>"<CR>
-map <leader>gB :Twiggy<CR>
+map <leader>gB :tabnew<CR>:Twiggy<CR><c-w>o
 map <leader>gb :Git blame<CR>
 map <leader>gC oCo-authored-by: Bruce Wayne <wayne@example.com><CR><ESC>kfB
 map <leader>gcm :Git checkout master<CR><CR>
