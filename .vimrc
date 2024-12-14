@@ -1,12 +1,15 @@
 syntax on
 filetype plugin indent on
 
-if &diff
-  colorscheme dichromatic
-else
-  colorscheme vividchalk
-endif
+colorscheme dichromatic
 
+" if &diff
+"   colorscheme dichromatic
+" else
+"   colorscheme vividchalk
+" endif
+
+set history=10000
 set textwidth=70
 set list
 set listchars=tab:>-
