@@ -54,14 +54,16 @@ map <leader>gB :tabnew<CR>:Twiggy<CR><c-w>o
 map <leader>gb :Git blame<CR>
 map <leader>gC oCo-authored-by: Bruce Wayne <wayne@example.com><CR><ESC>kfB
 map <leader>gcm :Git checkout master<CR><CR>
+map <leader>gcl :Gclog --reverse master..<CR>
 map <leader>gcb :Git checkout -b
 map <leader>gd :Gvdiff<CR>
+map <leader>gm :G diff master...<CR>
 map <leader>ge :e <cword><CR>
 map <leader>gf :Git fetch origin master:master
 map <leader>gg yaw<C-w>j:Ggrep <C-r>"
-map <leader>gl :Git log master..<CR><C-w>L
-map <leader>gL :Git log<CR><C-w>L
-map <leader>gp :Git pull-request -o -p -a alibby
+map <leader>gl :Git log --reverse master..<CR><C-w>L
+map <leader>gL :Git log %<CR><C-w>L
+map <leader>gp :!gh pr create --assignee alibby --fill --web
 map <leader>gP :Git pull<CR>
 map <leader>gr :Grebase --interactive master
 map <leader>gR :Gread<CR>
