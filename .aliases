@@ -21,3 +21,4 @@ alias tmat='tmux at'
 alias tmk='tmux kill-session -t'
 alias tmls='tmux ls'
 alias weather="clear; curl wttr.in"
+alias firefox='/Applications/Firefox.app/Contents/MacOS/firefox -private-window'
