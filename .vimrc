@@ -182,3 +182,6 @@ let g:twiggy_group_locals_by_slash = 0
 let g:twiggy_local_branch_sort = 'mru'
 let g:twiggy_split_position = 'topleft'
 let g:twiggy_num_columns = 35
+
+" Set location of required node version
+let g:copilot_node_command = '~/.nvm/versions/node/v16.15.1/bin/node'
