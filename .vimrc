@@ -80,12 +80,15 @@ map <leader>S :SyntasticCheck<CR>
 map <leader>s :set spell!<CR>
 map <leader>t :AV<CR>
 map <leader>q <c-w>c
+map <leader>w :G<CR>
+map <leader>W :e ~/Google\ Drive/Personal/worklog.md.asc<CR>
 " nmap <leader>X v$h"*y
 nmap <leader>X "*yy
 
 " reselect pasted text
 nnoremap gp `[v`]
 
+nnoremap <C-p> <cmd>Telescope find_files<cr>
 set foldlevel=1
 
 command! -nargs=+ Gca :r!git log -n100 --pretty=format:"\%an <\%ae>" | grep -i '<args>' | head -1 | xargs echo "Co-authored-by:"
