@@ -77,6 +77,7 @@ map <leader>rr :Rails db:rollback<CR>
 map <leader>rn :set rnu!<CR>
 map <leader>P /=\n.*
 map <leader>S :SyntasticCheck<CR>
+map <leader>s :set spell!<CR>
 map <leader>t :AV<CR>
 map <leader>q <c-w>c
 " nmap <leader>X v$h"*y
