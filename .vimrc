@@ -211,4 +211,8 @@ let g:twiggy_split_position = 'topleft'
 let g:twiggy_num_columns = 35
 
 " Set location of required node version
-let g:copilot_node_command = '~/.nvm/versions/node/v16.15.1/bin/node'
+let g:copilot_node_command = '~/.nvm/versions/node/v22.12.0/bin/node'
+let g:copilot_settings = #{selectedCompletionModel: 'gpt-4o-copilot'}
+" let g:GPGDefaultRecipients = ['alibby@andylibby.org']
+let g:GPGDefaultRecipients = ['7CEB5FEE1A91DF20F6149072BA959107CD11E59B']
+
