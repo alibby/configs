@@ -40,6 +40,7 @@ set textwidth=70
 set list
 set listchars=tab:>-
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+" set scrolloff=999
 set shiftround
 set nohidden
 set number
