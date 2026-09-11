@@ -1,6 +1,32 @@
 syntax on
 filetype plugin indent on
 
+" Spell highlighting that does not depend on red/brown discrimination.
+" dichromatic's own SpellBad is near-black text (#080808) on a dark
+" magenta block (#87005F) -- ~1.9:1, and the magenta collapses toward the
+" background once the red channel is discounted, so the word inside the
+" block is unreadable. These overrides separate the groups on the
+" blue/yellow axis and back that up with luminance and underline style.
+augroup spell_colorblind
+  autocmd!
+  " Misspelled: bright blue block, dark bold letters. ~6:1 for the block
+  " against the page and ~6:1 for the letters against the block.
+  autocmd ColorScheme * highlight SpellBad
+        \ ctermbg=69 ctermfg=232 cterm=bold
+        \ guibg=#5F87FF guifg=#080808 gui=bold guisp=NONE
+  " Lower-priority groups get a mark rather than a block, each a distinct
+  " hue and underline style so they differ even if the hues read alike.
+  autocmd ColorScheme * highlight SpellCap
+        \ ctermbg=NONE ctermfg=116 cterm=underline
+        \ guibg=NONE guifg=#87D7D7 gui=undercurl guisp=#87D7D7
+  autocmd ColorScheme * highlight SpellRare
+        \ ctermbg=NONE ctermfg=186 cterm=underline
+        \ guibg=NONE guifg=#DFDF87 gui=undercurl guisp=#DFDF87
+  autocmd ColorScheme * highlight SpellLocal
+        \ ctermbg=NONE ctermfg=133 cterm=underline
+        \ guibg=NONE guifg=#AF5FAF gui=undercurl guisp=#AF5FAF
+augroup END
+
 colorscheme dichromatic
 
 " if &diff
