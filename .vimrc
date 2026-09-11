@@ -90,7 +90,7 @@ map <leader>gf :Git fetch origin master:master
 map <leader>gg yaw<C-w>j:Ggrep <C-r>"
 map <leader>gl :Git log --reverse master..<CR><C-w>L
 map <leader>gL :Git log %<CR><C-w>L
-map <leader>gp :!gh pr create --assignee alibby --fill --web
+map <leader>gp :!gh pr create -a @me -w
 map <leader>gP :Git pull<CR>
 map <leader>gr :Grebase --interactive master
 map <leader>gR :Gread<CR>
